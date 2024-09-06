@@ -1,0 +1,219 @@
+/* Estilos para el encabezado, incluyendo botones y animaciones */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el texto en el encabezado */
+.text_header {
+    font-size: 50px;
+    background: linear-gradient(red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+/* Estilos para los enlaces en la navegación */
+nav a {
+    color: #fff;
+    background: linear-gradient(red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: font-size 0.2s;
+}
+
+nav a:hover {
+    font-size: 12px;
+}
+
+nav a.active {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos para los encabezados de nivel 1 */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 35px;
+    color: red;
+    text-shadow: 2px 2px 4px orange;
+}
+
+/* Estilos para el contenedor principal del contenido */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+main img {
+    width: 300px;
+    height: 245px;
+}
+
+/* Estilos para los encabezados de nivel 2 */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    color: red;
+    text-shadow: 2px 2px 4px yellow;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los párrafos */
+p {
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el pie de página y su contenido */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    position: fixed !important;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    color: #fff;
+    background: linear-gradient(red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Estilos adicionales para el pie de página */
+.ft-1 {
+    margin-left: 35px;
+}
+
+/* Estilos para los iconos de redes sociales en el pie de página */
+.social {
+    width: 24px;
+    height: 24px;
+    padding: 1px 0px 0px 0px;
+}
+
+/* Estilos para tabletas en orientación horizontal y dispositivos con pantallas medianas */
+@media (max-width: 1024px) and (min-width: 375px) {
+    header {
+        padding: 15px;
+    }
+
+    .text_header {
+        font-size: 40px;
+    }
+
+    main {
+        gap: 30px;
+        padding: 20px;
+    }
+
+    main img {
+        width: 250px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 475px) {
+    header {
+        padding: 10px;
+    }
+
+    .text_header {
+        font-size: 30px;
+    }
+
+    main {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    main img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .ft-1 {
+        margin-left: 0;
+    }
+
+    .social {
+        width: 20px;
+        height: 20px;
+    }
+
+    nav ul {
+        padding-left: 0;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}

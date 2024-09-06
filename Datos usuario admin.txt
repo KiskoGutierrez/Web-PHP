@@ -1,0 +1,11 @@
+Datos de usuario administrador:
+
+- Nombre: Francisco
+- Apellidos: Gutierrez
+- Correo electrónico: francisco@gmail.com
+- Teléfono: 677865432
+- Fecha de nacimiento: 30/11/1991
+- Dirección: Cuesta del palomar
+- Sexo: masculino
+- Nombre de usuario: fran
+- Contraseña: fff

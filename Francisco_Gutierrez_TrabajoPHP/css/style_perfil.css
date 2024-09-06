@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+
+    /* Estilo para el título dentro del encabezado */
+    h1 {
+        font-size: 50px;
+        background: linear-gradient(red, yellow, red);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+/* Estilo para el texto destacado en el encabezado */
+.text_header {
+    font-size: 50px;
+    background: linear-gradient(red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Estilo para la navegación */
+nav ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    background: linear-gradient(red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: font-size 0.2s;
+}
+
+nav a:hover {
+    font-size: 12px;
+}
+
+nav a.active {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para las secciones */
+section {
+    margin: 20px;
+
+    /* Estilo para los subtítulos dentro de las secciones */
+    h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 35px;
+        color: red;
+        text-shadow: 2px 2px 4px orange;
+    }
+}
+
+/* Estilo para los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Estilo para las etiquetas dentro de los formularios */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Estilo para los campos de entrada en los formularios */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+}
+
+/* Estilo para el botón de envío en los formularios */
+input[type="submit"] {
+    display: flex;
+    padding: 10px;
+    background: red;
+    animation: animate 4s linear infinite;
+    color: orange;
+    font-weight: 600;
+    font-size: 1.35em;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: orange;
+    /* Cambia el fondo a naranja */
+    color: red;
+    /* Cambia el color del texto a rojo para mayor contraste */
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

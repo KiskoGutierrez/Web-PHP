@@ -1,0 +1,326 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para el texto dentro del encabezado */
+.text_header {
+    font-size: 50px;
+    background: linear-gradient(red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Estilo para la navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    background: linear-gradient(red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: font-size 0.2s;
+}
+
+nav a:hover {
+    font-size: 12px;
+}
+
+nav a.active {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para el contenedor principal del contenido */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px;
+    flex: 1; /* Para que el contenido principal ocupe el espacio disponible */
+}
+
+/* Estilo para el formulario de inicio de sesión */
+.signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    background: #222;
+    z-index: 1000;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+    margin: 0;
+}
+
+/* Estilo para el contenido del formulario de inicio de sesión */
+.signin .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.signin .content h2 {
+    font-size: 35px;
+    color: orange;
+    text-shadow: 2px 2px 4px red;
+    text-transform: uppercase;
+}
+
+/* Estilo para el formulario dentro del contenido del formulario de inicio de sesión */
+.signin .content .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Estilo para el contenedor de los campos de entrada */
+.signin .content .form .inputBox {
+    position: relative;
+    width: 100%;
+}
+
+.signin .content .form .inputBox input {
+    width: 100%;
+    background: #333;
+    border: none;
+    outline: none;
+    padding: 25px 10px 7.5px;
+    border-radius: 16px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.signin .content .form .inputBox i {
+    position: absolute;
+    left: 0;
+    padding: 15px 10px;
+    font-style: normal;
+    color: #aaa;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.signin .content .form .inputBox input:focus~i,
+.signin .content .form .inputBox input:valid~i {
+    transform: translateY(-7.5px);
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.signin .content .form .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signin .content .form .links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signin .content .form .links a:nth-child(2) {
+    color: orange;
+    text-shadow: 2px 2px 4px red;
+    font-weight: 600;
+    animation: animate 4s linear infinite;
+}
+
+.signin .content .form .inputBox input[type="submit"] {
+    padding: 10px;
+    background: red;
+    animation: animate 4s linear infinite;
+    color: orange;
+    font-weight: 600;
+    font-size: 1.35em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+.signin .content .form .inputBox input[type="submit"]:hover {
+    background: orange;
+    color: red;
+}
+
+input[type="submit"]:active {
+    opacity: 0.6;
+}
+
+.links a {
+    color: orangered;
+}
+
+.links a:hover {
+    color: red;
+}
+
+/* Estilo para el pie de página */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    margin: 0;
+}
+
+/* Estilo para el texto dentro del pie de página */
+footer p {
+    color: #fff;
+    background: linear-gradient(red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.ft-1 {
+    margin-left: 35px;
+}
+
+.social {
+    width: 24px;
+    height: 24px;
+    padding: 1px 0px 0px 0px;
+}
+
+/* Media Queries */
+
+/* Estilos para tabletas en orientación horizontal y dispositivos con pantallas medianas */
+@media (max-width: 1024px) and (min-width: 475px) {
+    header {
+        padding: 15px;
+    }
+
+    .text_header {
+        font-size: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin: 40px;
+    }
+
+    .signin {
+        width: 350px;
+        height: auto;
+        margin: 0;
+        padding: 30px;
+        position: static;
+    }
+
+    .signin .content h2 {
+        font-size: 30px;
+    }
+
+    .signin .content .form .inputBox input {
+        font-size: 0.9em;
+    }
+
+    .signin .content .form .inputBox i {
+        font-size: 0.9em;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 475px) {
+    header {
+        padding: 10px;
+    }
+
+    .text_header {
+        font-size: 30px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin: 20px;
+    }
+
+    .signin {
+        width: 90%;
+        height: auto;
+        margin: 0;
+        padding: 20px;
+        position: static;
+    }
+
+    .signin .content h2 {
+        font-size: 25px;
+    }
+
+    .signin .content .form .inputBox input {
+        font-size: 0.8em;
+    }
+
+    .signin .content .form .inputBox i {
+        font-size: 0.8em;
+    }
+
+    footer {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        margin-top: 20px; /* Añadir un margen superior para asegurar espacio en pantallas pequeñas */
+    }
+
+    .ft-1 {
+        margin-left: 0;
+    }
+
+    .social {
+        width: 20px;
+        height: 20px;
+    }
+}

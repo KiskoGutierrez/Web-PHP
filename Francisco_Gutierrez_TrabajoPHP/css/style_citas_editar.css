@@ -1,0 +1,59 @@
+/* Estilo general para el contenedor */
+.container.p-4 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para el encabezado */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para la tarjeta */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el formulario dentro de la tarjeta */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para los campos de formulario */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el botón */
+.btn-success {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Estilo para el botón cuando está en hover */
+.btn-success:hover {
+    background-color: orange;
+}
+
+/* Estilo para el centro de columna */
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}

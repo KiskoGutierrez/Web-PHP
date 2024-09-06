@@ -1,0 +1,203 @@
+/* Importación de la fuente Quicksand desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Estilos globales para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+/* Estilos para el encabezado */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+}
+
+/* Estilos para el texto del encabezado */
+.text_header {
+    font-size: 50px;
+    background: linear-gradient(red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Estilos para la sección que contiene el formulario de inicio de sesión */
+section {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+/* Estilos para el formulario de inicio de sesión */
+section .signin {
+    margin-bottom: 100px;
+    background: #222;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 9);
+}
+
+/* Estilos para el contenido dentro del formulario de inicio de sesión */
+section .signin .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section .signin .content h2 {
+    font-size: 2em;
+    color: red;
+    text-transform: uppercase;
+    animation: animate 4s linear infinite;
+}
+
+/* Estilos para el formulario dentro del formulario de inicio de sesión */
+section .signin .content .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+section .signin .content .form .inputBox {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilos para los campos de entrada dentro del formulario */
+section .signin .content .form .inputBox input {
+    position: relative;
+    width: 100%;
+    background: #333;
+    border: none;
+    outline: none;
+    padding: 25px 10px 7.5px;
+    border-radius: 16px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+section .signin .content .form .inputBox i {
+    position: absolute;
+    left: 0;
+    padding: 15px 10px;
+    font-style: normal;
+    color: #aaa;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.signin .content .form .inputBox input:focus~i,
+.signin .content .form .inputBox input:valid~i {
+    transform: translateY(-7.5px);
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.signin .content .form .links {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/* Estilos para los enlaces en el formulario de inicio de sesión */
+.signin .content .form .links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signin .content .form .links a:nth-child(2) {
+    color: orange;
+    font-weight: 600;
+    animation: animate 4s linear infinite;
+}
+
+.signin .content .form .links a:nth-child(2):hover {
+    color: red;
+}
+
+/* Estilos para el botón de envío del formulario */
+.signin .content .form .inputBox input[type="submit"] {
+    padding: 10px;
+    background: red;
+    animation: animate 4s linear infinite;
+    color: orange;
+    font-weight: 600;
+    font-size: 1.35em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+.signin .content .form .inputBox input[type="submit"]:hover {
+    background: orange;
+    color: red;
+}
+
+input[type="submit"]:active {
+    opacity: 0.6;
+}
+
+/* Estilos para el footer y su contenido */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    bottom: 0px;
+}
+
+footer p {
+    color: #fff;
+    background: linear-gradient(red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Estilos adicionales para el footer */
+.ft-1 {
+    margin-left: 35px;
+}
+
+.social {
+    width: 24px;
+    height: 24px;
+    padding: 1px 0px 0px 0px;
+}

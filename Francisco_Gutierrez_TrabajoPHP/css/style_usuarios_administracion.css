@@ -1,0 +1,211 @@
+/* Estilos para el header */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    background: linear-gradient(red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    background: linear-gradient(red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: font-size 0.2s;
+}
+
+nav a:hover {
+    font-size: 12px;
+}
+
+nav a.active {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos generales del contenedor */
+.container {
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos del título dentro del contenedor */
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos de los formularios */
+.container_p-4 {
+    width: 600px;
+}
+
+.container_p-5 {
+    width: 1200px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input.form-control,
+.form-group select.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón */
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+    text-decoration: none;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* Espaciado y ajuste de los elementos */
+form {
+    margin-top: 1rem;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+
+/* Estilos para el main */
+main {
+    display: flex;
+    padding: 20px;
+    background-color: #f8f9fa;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+form {
+    display: inline;
+}
+
+form select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: red;
+    border: none;
+    color: orange;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: orange;
+    color: red;
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .social a img {
+    width: 24px;
+    height: 24px;
+}
+
+footer .ft-1 {
+    margin-top: 10px;
+    font-size: 14px;
+}

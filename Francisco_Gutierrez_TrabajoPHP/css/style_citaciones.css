@@ -1,0 +1,75 @@
+/* Estilos generales para el encabezado, incluyendo un fondo oscuro y un título con un degradado de color */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+
+    h1 {
+        font-size: 50px;
+        background: linear-gradient(red, yellow, red);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+/* Estilos para las secciones, incluyendo títulos con sombra y texto centrado */
+section {
+    margin: 20px;
+
+    h2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 35px;
+        color: red;
+        text-shadow: 2px 2px 4px orange;
+    }
+
+    p {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+/* Estilos para el primer formulario, con elementos centrados y botones con efectos al pasar el mouse */
+.form-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el segundo formulario, similar al primero, pero con inputs y botones redondeados */
+.form-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilo específico para los formularios dentro de la clase form-2 */
+.form-2 form {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+/* Estilo del pie de página, que se mantiene fijo en la parte inferior de la página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

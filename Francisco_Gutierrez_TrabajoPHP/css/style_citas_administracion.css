@@ -1,0 +1,151 @@
+/* Estilos para el header */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px;
+    background: linear-gradient(red, yellow, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Estilos para el main y formularios */
+main {
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+.btn-success {
+    background-color: red;
+    border: none;
+    color: orange;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: orange;
+    color: red;
+}
+
+.btn-secondary {
+    background-color: green;
+    border: none;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: greenyellow;
+}
+
+.btn-danger {
+    background-color: red;
+    text-decoration: none;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: orangered;
+}
+
+/* Estilos para alertas */
+.alert {
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Estilos para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .social {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .social a img {
+    width: 24px;
+    height: 24px;
+}
